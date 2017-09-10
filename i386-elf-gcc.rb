@@ -28,7 +28,7 @@ class I386ElfGcc < Formula
                              "--without-headers",
                              "--with-gmp=/usr/local/Cellar",
                              "--with-mpfr=/usr/local/Cellar",
-                             "--with-mpc=/usr/local/Cellar}"
+                             "--with-mpc=/usr/local/Cellar"
       system 'make all-gcc'
       system 'make install-gcc'
       FileUtils.ln_sf binutils.prefix/"i386-elf", prefix/"i386-elf"
